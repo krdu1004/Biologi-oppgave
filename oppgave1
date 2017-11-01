@@ -1,4 +1,28 @@
-#testfil for oppgaven
-hehehe
-#send nudes
-hehehe
+from pylab import *
+
+fil = open("DNA.txt","r")
+fil.readline()
+#streng=fil.read()
+DNA = []
+DNA1 = []
+
+for rad in fil:
+    DNA.append(rad)
+    
+fil.close()
+#print(DNA)
+#print(streng)
+"""
+for rad in DNA:
+    for bokstav in rad:
+        print(bokstav + "\n")
+"""
+for rad in DNA:
+    for bokstav in rad:
+        if bokstav == "A" or bokstav == "T" or bokstav == "G" or bokstav == "C" or bokstav == "a" or bokstav == "t" or bokstav == "g" or bokstav == "c":
+            DNA1.append(bokstav)
+        
+        
+#print(DNA)
+
+print(DNA1)
