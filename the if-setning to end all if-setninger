@@ -1,0 +1,40 @@
+if kodon == "UUU" or kodon == "UUC":
+    aminosyre = "Fenylalanin"
+elif kodon == "UUA" or kodon == "UUG" or kodon == "CUU" or kodon == "CUC" or kodon == "CUA" or kodon == "CUG":
+    aminosyre = "Leucin"
+elif kodon == "UCU" or kodon == "UCC" or kodon == "UCA" or kodon == "UCG":
+    aminosyre = "Serin"
+elif kodon == "UAU" or kodon == "UAC" or kodon == "AGU" or kodon == "AGC":
+    aminosyre = "Tyrosin"
+elif kodon == "UAA" or kodon == "UAG" or kodon == "UGA":
+    aminosyre = "STOPP"
+elif kodon == "UGU" or kodon == "UGC":
+    aminosyre = "Cystein"
+elif kodon == "UGG":
+    aminosyre = "Tryptofan"
+elif kodon == "CCU" or kodon == "CCC" or kodon == "CCA" or kodon == "CCG":
+    aminosyre = "Prolin"
+elif kodon == "CAU" or kodon == "CAC":
+    aminosyre = "Histidin"
+elif kodon == "CAA" or kodon == "CAG" or kodon == "GAA" or kodon == "GAG":
+    aminosyre = "Glutamin"
+elif kodon == "CGU" or kodon == "CGC" or kodon == "CGA" or kodon == "CGG" or kodon == "AGA" or kodon == "AGG":
+    aminosyre = "Arginin"
+elif kodon == "AUU" or kodon == "AUC" or kodon == "AUA":
+    aminosyre = "Isoleucin"
+elif kodon == "AUG":
+    aminosyre = "Metionin"
+elif kodon == "ACU" or kodon == "ACC" or kodon == "ACA" or kodon == "ACG":
+    aminosyre = "Treonin"
+elif kodon == "AAU" or kodon == "AAC":
+    aminosyre = "Aspargin"
+elif kodon == "AAA" or kodon == "AAG":
+    aminosyre = "Lysin"
+elif kodon == "GUU" or kodon == "GUC" or kodon == "GUA" or kodon == "GUG":
+    aminosyre = "Valin"
+elif kodon == "GCU" or kodon == "GCC" or kodon == "GCA" or kodon == "GCG":
+    aminosyre = "Alanin"
+elif kodon == "GAU" or kodon == "GAC":
+    aminosyre = "Asparaginsyre"
+elif kodon == "GGU" or kodon == "GGC" or kodon == "GGA" or kodon == "GGG":
+    aminosyre = "Glysin"
