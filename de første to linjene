@@ -1,0 +1,2 @@
+DNA = open("DNA.txt", "r")
+DNA.read()
