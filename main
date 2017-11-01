@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov  1 13:06:01 2017
+
+@author: kristoffer
+"""
+
+from pylab import *
+
+fil = open("DNA.txt","r")
+fil.readline()
+#streng=fil.read()
+DNA = []
+DNA1 = []
+RNA = []
+kodoner = []
+
+for rad in fil:
+    DNA.append(rad)
+    
+fil.close()
+#print(DNA)
+#print(streng)
+"""
+for rad in DNA:
+    for bokstav in rad:
+        print(bokstav + "\n")
+"""
+for rad in DNA:
+    for bokstav in rad:
+        if bokstav == "<":      #fjerner teksten
+            fil.readline()
+        if bokstav == "A" or bokstav == "T" or bokstav == "G" or bokstav == "C": #or bokstav == "a" or bokstav == "t" or bokstav == "g" or bokstav == "c":
+            DNA1.append(bokstav)
+            
+for i in DNA1:
+    if i=="A":
+        RNA.append("U")
+    elif i=="G":
+        RNA.append("C")
+    elif i=="T":
+        RNA.append("A")
+    elif i=="C":
+        RNA.append("G")
+print(len(RNA))        
+for j in range(0,14750,3):
+    kodoner.append(RNA[j]+RNA[j+1]+RNA[j+2])
+  #  del RNA[j+1]
+  #  del RNA[j+2]
+   # print(j)
+
+    
+
+        
+
+        
+        
+        
+#print(DNA)
+
+#print(DNA1)
+#print(RNA)
+print(kodoner)
